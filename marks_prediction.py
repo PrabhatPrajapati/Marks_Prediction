@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 df=pd.read_csv("student_info.csv")
 print(df.head())
-print(df.mean())
+
 df=df.fillna(df.mean())
 print(df.head())
 print(df.isnull().sum())
